@@ -6,6 +6,7 @@
 代码说明：
 常规java项目（没有依赖maven,但是文件结构像maven因为自己想转为maven但是找jar包太痛苦了，下载速度慢不说，很多老旧jar尝试多次都不对），
 所以jar包需要自己放到lib文件夹下，考虑到github空间有限，jar包将会另外提供
+jar包地址：http://pan.baidu.com/s/1pLr8cpd，密码4bj5
 
 main/java/mytask
 DownloadAdver
