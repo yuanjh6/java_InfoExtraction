@@ -1,0 +1,4 @@
+1，修改部分变量命名，和2的配置文件格式不同，增加pageinfo页面信息获取
+2，2中的用map表示的部分，在3中用正规的xml表示了，没有用map
+3，3中的获取方法为htmlunit也就是可以获得js内容
+4,增加js配置字段，不是js时调用httpclient,htmlunit速度慢

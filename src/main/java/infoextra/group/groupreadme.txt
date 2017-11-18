@@ -1,0 +1,106 @@
+配置文件格式
+<?xml version="1.0" encoding="utf-8"?>
+<root> 
+  <taskName>myrss</taskName>  
+  <taskInfo>myrssnote</taskInfo>  
+  <dbDriver>com.mysql.jdbc.Driver</dbDriver>  
+  <dbUrl><![CDATA[jdbc:mysql://localhost:3306/myprogram?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>  
+  <tableName>myrssnote</tableName>  
+  <tableField>groupname,name,title,link,pubdate,author</tableField>  
+  <group> 
+    <groupName>FinanceNews</groupName>  
+    <enable>true</enable>  
+    <rss> 
+      <enable>true</enable>  
+      <name>FT中文网每日新闻</name>  
+      <url>http://www.ftchinese.com/rss/feed</url>  
+      <markValue>http://www.ftchinese.com/story/001051762</markValue>  
+      <finish>true</finish> 
+    </rss>  
+    <rss> 
+      <enable>true</enable>  
+      <name>FT中文网每日焦点</name>  
+      <url>http://www.ftchinese.com/rss/news</url>  
+      <markValue>http://www.ftchinese.com/story/001051778</markValue>  
+      <finish>true</finish> 
+    </rss>  
+    <page>
+      <enable>true</enable>
+      <name>创新集项目</name>
+      <enableJs>false</enableJs>
+      <firstUrl/>
+      <pageUrl>http://www.chuangxinji.com/company/p/#PAGE#</pageUrl>
+      <pageRange>1,2</pageRange>  
+      <charset>utf-8</charset>
+      <pageInfo/>  
+      <elementSelect>div.listcompany&gt;ul&gt;li</elementSelect>
+      <elementInfo>
+        <title>div&gt;h2&gt;a,text</title>
+        <link>div&gt;h2&gt;a,attr,href</link>  
+        <description>div&gt;p,text</description>
+      </elementInfo>  
+      <baseUrl>
+        <!--加到上面link字段上-->
+      </baseUrl>
+      <otherInfo/>
+      <markField>link</markField>  
+      <markValue/>  
+      <finish>false</finish> 
+    </page> 
+  </group>  
+  <group> 
+    <groupName>Science</groupName>
+    <enable>true</enable>
+    <rss> 
+      <enable>true</enable>  
+      <name>果壳</name>  
+      <url>http://www.guokr.com/rss/</url>  
+      <markValue>http://www.guokr.com/article/437244/</markValue>  
+      <finish>true</finish> 
+    </rss> 
+  </group> 
+</root>
+解析
+1，root根目录下
+  <taskName>标识任务名称，用于自己区别</taskName>  
+  <taskInfo>任务简介/taskInfo>
+  <dbDriver>jdbc数据库驱动类型</dbDriver>  
+  <dbUrl>数据库连接url，charset,username,pass等信息,注意采用CDATA形式数据表示</dbUrl>  
+  <tableName>采集数据存放表名</tableName>
+  <tableField>数据表字段,只会将此列表中的字段写入数据库中,分隔符用英文逗号,注意groupname特指group中的groupName字段信息,name特指各个种子的种子名称 </tableField>
+  <group>分组信息，可以多个，依次放到后面即可</group>
+2,group目录下信息
+  <groupName>分组名称，会对应tableField中的groupname字段</groupName>
+  <enable>是否启用,必须配置为true时才有效，否则认为无效</enable>
+  <rss>rss格式的数据</rss>
+  <page>page格式的数据</page>
+3，rss配置形式
+  <enable>是否启用，为true时启用，否则认为无效</enable>
+  <name>种子名称，对应tableField中的name字段</name>
+  <url>feed的url地址</url>
+  <markValue>最新的结果标记为，是采用rss结果中的link字段的结果</markValue>
+  <finish>是否完成的标记，暂无用</finish>
+4，page配置格式
+<page>
+  <enable>是否启用，仅当为true时有效</enable>
+  <name>任务名称，对应与tableField的name字段</name>
+  <firstUrl/>在第一个页面不符合pageurl的规则时需要配置，否则无需配置
+  <pageUrl>页面生成规则，会将#PAGE#内容依次替换为下面页码中数字用于生成需要提取的url队列</pageUrl>
+  <pageRange>1,2</pageRange>页码范围，英文逗号分隔
+  <charset>网页的字符集</charset>
+  <enableJs>是否开启js</enableJs>
+  <pageInfo/>页面元素获取器，如果要获取信息抽取页面的title等信息再次配置，（建立子节点形式配置）
+  <elementSelect>元素选择器，选择单个feed元素</elementSelect>
+  <elementInfo>元素信息配置，子节点形式添加
+    <title>title选择器(jsoup格式)，选择元素后元素内部的选择器</title>
+    <link>link选择器(jsoup格式)</link>
+    <description/>
+    <pubdate>同上</pubdate>
+	<author/>
+  </elementInfo>
+  <baseUrl>如果不为空会添加到elementinfo的link字段前面<!--加到上面link字段上--></baseUrl>
+  <otherInfo/>添加到结果的固定信息
+  <markField>采用那个字段的结果最为标记字段</markField>  
+  <markValue/>最新标记标记为,依照上面的设定字段保存最新标记
+  <finish>完成标记位，暂无用</finish>
+</page>

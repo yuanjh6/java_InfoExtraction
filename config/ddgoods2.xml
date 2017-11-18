@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<name>works</name>
+	<dbDriver>com.mysql.jdbc.Driver</dbDriver>
+	<dbUrl><![CDATA[jdbc:mysql://localhost:3306/adver?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>
+	<tableName>adver_goods</tableName><tableField>title,url,info,time,type,seed</tableField>
+	<seeds>
+		<seed>
+			<enable>true</enable><finish>true</finish><name>ddbook</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%CD%BC%CA%E9&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="book","seed"="ddbook","ltitle"="图书-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=8714041#ddclick?act=click&amp;pos=8714041_0_2_q&amp;cat=&amp;key=%CD%BC%CA%E9&amp;qinfo=223181_21_48&amp;pinfo=&amp;minfo=&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464689000</markValue>
+			</seed><seed>
+			<enable>true</enable><finish>true</finish><name>ddcloth</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%B7%FE%D7%B0&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="cloth","seed"="ddcloth","ltitle"="服装-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1007123012#ddclick?act=click&amp;pos=1007123012_0_1_q&amp;cat=&amp;key=%B7%FE%D7%B0&amp;qinfo=177898_21_48&amp;pinfo=&amp;minfo=&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464705000</markValue>
+			
+			</seed><seed>
+			<enable>true</enable><finish>true</finish><name>ddshoe</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%D0%AC%D7%D3&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="shoe","seed"="ddshoe","ltitle"="鞋子-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1368252202#ddclick?act=click&amp;pos=1368252202_0_1_q&amp;cat=&amp;key=%D0%AC%D7%D3&amp;qinfo=3633_21_48&amp;pinfo=&amp;minfo=&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464718000</markValue>
+			
+			</seed><seed>
+			<enable>true</enable><finish>true</finish><name>ddmakeup</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%BB%AF%D7%B1&category_id=4002074&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="makeup","seed"="ddmakeup","ltitle"="化妆-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1048633105#ddclick?act=click&amp;pos=1048633105_0_1_m&amp;cat=4002074&amp;key=%BB%AF%D7%B1&amp;qinfo=&amp;pinfo=&amp;minfo=1379_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464729000</markValue>
+			
+			</seed>
+		<seed>
+			<enable>true</enable><finish>true</finish><name>ddhousehold</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%BC%D2%BE%D3&category_id=4003900&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="household","seed"="ddhousehold","ltitle"="家居-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=60278288#ddclick?act=click&amp;pos=60278288_0_1_m&amp;cat=4003900&amp;key=%BC%D2%BE%D3&amp;qinfo=&amp;pinfo=&amp;minfo=45274_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464748000</markValue>
+			
+			</seed>
+			<seed>
+			<enable>true</enable><finish>true</finish><name>ddfood</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%CA%B3%C6%B7&category_id=4002145&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="food","seed"="ddfood","ltitle"="食品-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1265934102#ddclick?act=click&amp;pos=1265934102_0_1_m&amp;cat=4002145&amp;key=%CA%B3%C6%B7&amp;qinfo=&amp;pinfo=&amp;minfo=18918_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464761000</markValue>
+			
+			</seed>
+			
+			<seed>
+			<enable>true</enable><finish>true</finish><name>dddigital</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%CA%FD%C2%EB&category_id=4003613&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="digital","seed"="dddigital","ltitle"="数码-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1004224906#ddclick?act=click&amp;pos=1004224906_0_1_m&amp;cat=4003613&amp;key=%CA%FD%C2%EB&amp;qinfo=&amp;pinfo=&amp;minfo=61799_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464775000</markValue>
+			</seed>
+			
+			<seed>
+			<enable>true</enable><finish>true</finish><name>ddmobile</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%CA%D6%BB%FA&category_id=4003613&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="mobile","seed"="ddmobile","ltitle"="手机-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1055803022#ddclick?act=click&amp;pos=1055803022_0_1_m&amp;cat=4003613&amp;key=%CA%D6%BB%FA&amp;qinfo=&amp;pinfo=&amp;minfo=4944_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464790000</markValue>
+			</seed>
+			
+			<seed>
+			<enable>true</enable><finish>true</finish><name>ddpc</name>
+			<buildUrl><![CDATA[http://search.dangdang.com/?key=%B5%E7%C4%D4&category_id=4003613&page_index=#PAGE#]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="pc","seed"="ddpc","ltitle"="电脑-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=1011267322#ddclick?act=click&amp;pos=1011267322_0_1_m&amp;cat=4003613&amp;key=%B5%E7%C4%D4&amp;qinfo=&amp;pinfo=&amp;minfo=3997_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464803000</markValue>
+			</seed>
+			
+			<seed>
+			<enable>true</enable><finish>true</finish><name>ddapplicate</name>
+			<buildUrl><![CDATA[http://category.dangdang.com/cid4002522-pg#PAGE#.html]]></buildUrl><pageRange>21,22</pageRange><firstUrl/>
+			<baseUrl><![CDATA[]]></baseUrl>
+			<charset/>
+			<elementSelect>ul&gt;li&gt;div.inner</elementSelect><staticMap>{"type"="applicate","seed"="ddapplicate","ltitle"="家电-当当网","ldescription"="当当网在线销售等商品，并为您购买等商品提供品牌、价格、图片、评论、促销等选购信息"}</staticMap><attrMap>{"title"="p.name&gt;a,text","pic"="img,attr,src","url"="a,attr,href","info"="p.detail,text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://product.dangdang.com/product.aspx?product_id=60544760#ddclick?act=click&amp;pos=60544760_0_2_m&amp;cat=4002522&amp;key=&amp;qinfo=&amp;pinfo=&amp;minfo=14754_21_48&amp;ninfo=&amp;custid=&amp;permid=&amp;ref=&amp;rcount=&amp;type=&amp;t=1371464818000</markValue>
+			</seed>
+			
+			
+			
+			
+			
+			
+	</seeds>
+	</root>

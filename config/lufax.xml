@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<taskName>test</taskName><dbDriver>com.mysql.jdbc.Driver</dbDriver>
+	<dbUrl><![CDATA[jdbc:mysql://localhost:3306/adver?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>
+	<tableName>adver_goods</tableName><tableField>title,link,rate,time,type,seedname,pudDate,description,author</tableField>
+	<seeds>
+		<seed>
+			<name>lufax</name><enableSeed>true</enableSeed><enableJs>true</enableJs><firstUrl>http://list.lufax.com/list/listing</firstUrl><pageUrl></pageUrl><pageRange>1,1</pageRange>
+			<charset>utf-8</charset><pageInfo><pagetitle>title,text</pagetitle></pageInfo>
+			
+			<elementSelect>table>tbody>tr</elementSelect><elementInfo><title>td>span>a,text</title><link>td>span>a,attr,href</link>
+	<time>td:contains(月),text</time><pudDate>td:matches(-.*-),text</pudDate>
+	<rate>td:contains(%),text</rate>
+	</elementInfo>
+			<baseUrl>http://list.lufax.com</baseUrl><otherInfo><otherinfo>hello</otherinfo></otherInfo><markField>link</markField>
+			<markValue></markValue>
+
+
+			<finish>false</finish></seed>
+	</seeds>
+	<rsss>
+		<rss>
+			<name>路透中国</name><enableRss>true</enableRss>
+			<url>cn.reuters.feedsportal.com/chinaNews</url>
+			<markLink></markLink><finish></finish>
+			</rss></rsss></root>

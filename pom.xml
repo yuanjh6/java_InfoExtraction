@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>groupId</groupId>
+    <artifactId>InfoExtraction</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.0.0</version>
+    </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/tw.edu.ntu.csie/libsvm -->
+        <dependency>
+            <groupId>tw.edu.ntu.csie</groupId>
+            <artifactId>libsvm</artifactId>
+            <version>3.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.8.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.swt/org.eclipse.swt.win32.win32.x86 -->
+        <dependency>
+            <groupId>org.eclipse.swt</groupId>
+            <artifactId>org.eclipse.swt.win32.win32.x86</artifactId>
+            <version>4.3</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.swt/org.eclipse.swt -->
+        <dependency>
+            <groupId>org.eclipse.swt</groupId>
+            <artifactId>org.eclipse.swt</artifactId>
+            <version>3.5.0.v3550b</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>2.11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.sleepycat/je -->
+        <dependency>
+            <groupId>com.sleepycat</groupId>
+            <artifactId>je</artifactId>
+            <version>5.0.73</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.rometools/rome -->
+        <dependency>
+            <groupId>com.rometools</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.5.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.ansj/ansj_seg -->
+        <dependency>
+            <groupId>org.ansj</groupId>
+            <artifactId>ansj_seg</artifactId>
+            <version>5.1.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.rometools/rome -->
+        <dependency>
+            <groupId>com.rometools</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>1.4.01</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/xerces/xercesImpl -->
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/xalan/xalan -->
+        <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>xalan</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/xalan/serializer -->
+        <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>serializer</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.netbeans.external/sac-1.3 -->
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>sac-1.3</artifactId>
+            <version>RELEASE701</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.rometools/rome -->
+        <dependency>
+            <groupId>com.rometools</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.swt.win32.win32/x86 -->
+        <dependency>
+            <groupId>org.eclipse.swt.win32.win32</groupId>
+            <artifactId>x86</artifactId>
+            <version>3.3.0-v3346</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.nekohtml/nekohtml -->
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.12</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>9.4.5.v20170502</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-util -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.4.7.v20170914</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/jdom/jdom -->
+        <dependency>
+            <groupId>jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>2.15</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/chardet/chardet -->
+        <dependency>
+            <groupId>chardet</groupId>
+            <artifactId>chardet</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+    </dependencies>
+</project>

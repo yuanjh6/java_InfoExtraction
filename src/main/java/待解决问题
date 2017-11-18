@@ -1,0 +1,3 @@
+1,class maincontent中headtag，foottag,splittag不能为空，但实际情况是可以存在空的情况（我们需要他可以为空），代码在无法完成这个。
+2,信息抓取的通用的RSS信息以及保存到数据库中（重复检测过滤）
+3，

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<name>works</name>
+	<dbDriver>com.mysql.jdbc.Driver</dbDriver>
+	<dbUrl><![CDATA[jdbc:mysql://localhost:3306/myprogram?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>
+	<tableName>infocatch_works</tableName><tableField>title,url,info,time,type,seed</tableField>
+	<seeds>
+		<seed>
+			<name>hiall</name>
+			<buildUrl><![CDATA[http://www.hiall.com.cn/search/infos.php?regions=&content=%E9%93%B6%E8%A1%8C&order=1&inday=&page=#PAGE#]]></buildUrl><pageRange>1,3</pageRange><firstUrl/>
+			<baseUrl><![CDATA[http://www.hiall.com.cn]]></baseUrl>
+			<charset>utf-8</charset>
+			<elementSelect>ul.searchresult_list&gt;li</elementSelect><staticMap>{"type"="works","seed"="hiall"}</staticMap><attrMap>{"title"="h1,text","url"="a,attr,href","info"="p:has(b),text","time"="p:has(span),text"}</attrMap>
+			<markField>url</markField>
+			<markValue>http://www.hiall.com.cn/job/position_277125.html</markValue>
+			</seed>
+	 </seeds>
+	</root>

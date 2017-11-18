@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<taskName>test</taskName><dbDriver>com.mysql.jdbc.Driver</dbDriver>
+	<dbUrl><![CDATA[jdbc:mysql://localhost:3306/myprogram?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>
+	<tableName>mynote_store</tableName><tableField>groupname,name,title,link,description,pubdate,author</tableField>
+	<seeds>
+		<seed>
+			<seedEnable>true</seedEnable><seedType>page</seedType><name>创见产品</name><enableJs>false</enableJs><firstUrl/><pageUrl>http://tech2ipo.com/apps/#PAGE#</pageUrl><pageRange>1,33</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>section&gt;article.post</elementSelect><elementInfo><title>h3.title&gt;a,text</title><link>h3.title&gt;a,attr,href</link>
+	<description>div&gt;p,text</description></elementInfo>
+			<baseUrl><!--加到上面link字段上--><![CDATA[http://tech2ipo.com]]></baseUrl><otherInfo>
+	<groupname>Product</groupname></otherInfo><markField>link</markField>
+			<markValue>http://tech2ipo.com/60973</markValue>
+
+
+			<finish>true</finish>
+			
+			</seed><seed>
+			<seedEnable>true</seedEnable><seedType>page</seedType><name>创新集项目</name><enableJs>false</enableJs><firstUrl/><pageUrl>http://www.chuangxinji.com/company/p/#PAGE#</pageUrl><pageRange>1,71</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>div.listcompany&gt;ul&gt;li</elementSelect><elementInfo><title>div&gt;h2&gt;a,text</title><link>div&gt;h2&gt;a,attr,href</link>
+	<description>div&gt;p,text</description></elementInfo>
+			<baseUrl><!--加到上面link字段上--></baseUrl><otherInfo>
+	<groupname>Idea</groupname></otherInfo><markField>link</markField>
+			<markValue>http://www.chuangxinji.com/company/16662</markValue>
+
+
+			<finish>true</finish>
+			
+			</seed>
+		
+			<seed>
+			<seedEnable>true</seedEnable><seedType>page</seedType><name>吹号</name><enableJs>false</enableJs><firstUrl/><pageUrl><![CDATA[http://www.chuihao.com/index.php?app=projects&mod=Rank&act=lists&&p=#PAGE#]]></pageUrl><pageRange>1,54</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>ul.pj_lis&gt;li</elementSelect><elementInfo><title>dl&gt;dt&gt;a,text</title><link>dl&gt;dt&gt;a,attr,href</link>
+	<description>dl&gt;dd&gt;p,text</description></elementInfo>
+			<baseUrl><!--加到上面link字段上--></baseUrl><otherInfo>
+	<groupname>Idea</groupname></otherInfo><markField>link</markField>
+			<markValue>http://www.chuihao.com/projects/982</markValue>
+
+
+			<finish>true</finish>
+			
+			</seed>
+			<seed>
+			<seedEnable>true</seedEnable><seedType>page</seedType><name>快鲤鱼国内</name><enableJs>false</enableJs><firstUrl/><pageUrl><![CDATA[http://www.kuailiyu.com/local-startups/index_#PAGE#.html]]></pageUrl><pageRange>1,42</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>div&gt;div.post</elementSelect><elementInfo><title>div&gt;div.art_right&gt;h1&gt;a,text</title><link>div&gt;div.art_right&gt;h1&gt;a,attr,href</link>
+	<description>div&gt;div.art_right&gt;p.summary,text</description></elementInfo>
+			<baseUrl><!--加到上面link字段上--></baseUrl><otherInfo>
+	<groupname>Product</groupname></otherInfo><markField>link</markField>
+			<markValue>http://www.kuailiyu.com/article/4405.html</markValue>
+
+
+			<finish>true</finish>
+			
+			</seed>
+			<seed>
+			<seedEnable>true</seedEnable><seedType>page</seedType><name>快鲤鱼国外</name><enableJs>false</enableJs><firstUrl/><pageUrl><![CDATA[http://www.kuailiyu.com/foreign-startups/index_#PAGE#.html]]></pageUrl><pageRange>1,100</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>div&gt;div.post</elementSelect><elementInfo><title>div&gt;div.art_right&gt;h1&gt;a,text</title><link>div&gt;div.art_right&gt;h1&gt;a,attr,href</link>
+	<description>div&gt;div.art_right&gt;p.summary,text</description></elementInfo>
+			<baseUrl><!--加到上面link字段上--></baseUrl><otherInfo>
+	<groupname>Product</groupname></otherInfo><markField>link</markField>
+			<markValue>http://www.kuailiyu.com/article/4400.html</markValue>
+
+
+			<finish>true</finish>
+			
+			</seed>
+			</seeds></root>

@@ -1,0 +1,7 @@
+;配置文件空白样本
+name=
+charset=
+content=headtag<[content]>foottag
+splitTag=<li>|<li >|<div>
+reg=<a href="(.*?)"[^>]*>(.*?)</a>
+regInfo=info:2,turl:1

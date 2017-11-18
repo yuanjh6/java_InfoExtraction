@@ -1,0 +1,11 @@
+;iheima创意频道配置文件
+name=iheimacreative
+firstUrl=http://www.iheima.com/list-7-1.html
+baseUrl=http://www.iheima.com/list-7-pageid.html
+charSet=utf-8
+headTag=<div id="content" class="sub_con clearfix">
+footTag=<div class="right_con clearfix">
+splitTag=<div class="article_item clearfix">
+reg=<h2><a href="(.*?)".*?>\【(.*?)\】(.*?)</a>.*<p>(.*?)<a
+regInfo=sitetype:2,sitename:3,siteurl:1,siteinfo:4,infourl:1
+base=

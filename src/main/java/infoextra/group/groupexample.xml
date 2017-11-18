@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <taskName>myrss</taskName>
+    <taskInfo>myrssnote</taskInfo>
+    <dbDriver>com.mysql.jdbc.Driver</dbDriver>
+    <dbUrl><![CDATA[jdbc:mysql://localhost:3306/myprogram?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>
+    <tableName>myrssnote</tableName>
+    <tableField>groupname,name,title,link,pubdate,author</tableField>
+    <group>
+        <groupName>FinanceNews</groupName>
+        <enable>true</enable>
+        <rss>
+            <enable>true</enable>
+            <name>FT中文网每日新闻</name>
+            <url>http://www.ftchinese.com/rss/feed</url>
+            <markValue>http://www.ftchinese.com/story/001051762</markValue>
+            <finish>true</finish>
+        </rss>
+        <rss>
+            <enable>true</enable>
+            <name>FT中文网每日焦点</name>
+            <url>http://www.ftchinese.com/rss/news</url>
+            <markValue>http://www.ftchinese.com/story/001051778</markValue>
+            <finish>true</finish>
+        </rss>
+        <page><enable>true</enable><name>创新集项目</name><enableJs>false</enableJs><firstUrl/><pageUrl>http://www.chuangxinji.com/company/p/#PAGE#</pageUrl><pageRange>1,2</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>div.listcompany&gt;ul&gt;li</elementSelect><elementInfo><title>div&gt;h2&gt;a,text</title><link>div&gt;h2&gt;a,attr,href</link>
+	<description>div&gt;p,text</description></elementInfo>
+			<baseUrl><!--加到上面link字段上--></baseUrl><otherInfo></otherInfo><markField>link</markField>
+			<markValue></markValue>
+
+
+			<finish>false</finish>
+			
+			</page>
+        
+        
+        
+        
+        
+        
+        
+        
+    </group>
+    <group>
+        <groupName>Science</groupName><enable>true</enable><rss>
+            <enable>true</enable>
+            <name>果壳</name>
+            <url>http://www.guokr.com/rss/</url>
+            <markValue>http://www.guokr.com/article/437244/</markValue>
+            <finish>true</finish>
+        </rss>
+        
+    </group>
+   
+</root>

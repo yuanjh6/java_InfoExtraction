@@ -1,0 +1,10 @@
+;rss通用格式
+name=iplaysoft
+firstUrl=http://feed.iplaysoft.com/
+baseUrl=http://feed.iplaysoft.com/
+charSet=utf-8
+headTag=<channel>
+footTag=</channel>
+splitTag=<item>
+reg=<title>(.*)</title>.*<link>(.*)</link>.*<description>(.*)</description>.*<pubDate>(.*)</pubDate>
+regInfo=title:1,link:2,description:3,pubDate:4

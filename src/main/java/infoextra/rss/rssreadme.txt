@@ -1,0 +1,75 @@
+配置文件格式：
+<?xml version="1.0" encoding="UTF-8"?>
+<root> 
+  <taskName>myrss</taskName>  
+  <taskInfo>myrssnote</taskInfo><dbDriver>com.mysql.jdbc.Driver</dbDriver>  
+  <dbUrl><![CDATA[jdbc:mysql://localhost:3306/myprogram?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>  
+  <tableName>myrssnote</tableName>
+  <tableField>groupname,name,title,link,description,pubdate,author</tableField>  
+  <group>
+    	<groupName>test</groupName>
+    	<enable>true</enable>
+    	<rss>
+    		<enable>true</enable>
+    		<name>blog-tuimo</name>
+    		<url>http://feed.mifengtd.cn/</url>
+    		<markValue>http://www.mifengtd.cn/articles/omnifocus-6.html</markValue>
+    		<finish>true</finish>
+    	</rss>
+    	<page>
+    		<enable>true</enable>
+    		<name>lufax</name>
+    		<url>http://list.lufax.com/list/listing</url>
+    		<charset>utf-8</charset>
+    		<enableJs>true</enableJs>
+    		<elementSelect>table&gt;tbody&gt;tr</elementSelect>
+    		<elementInfo>
+    			<title>td&gt;span&gt;a,text</title>
+    			<link>td&gt;span&gt;a,attr,href</link>
+    			<description/>
+    			<pubdate>td:matches(-.*-),text</pubdate>
+				<author/>
+			</elementInfo>
+			<markValue/>
+			<finish>false</finish>
+		</page>
+    </group>
+    <group>
+    </group>
+</root>
+说明：
+1，root根目录下
+  <taskName>标识任务名称，用于自己区别</taskName>  
+  <taskInfo>任务简介/taskInfo>
+  <dbDriver>jdbc数据库驱动类型</dbDriver>  
+  <dbUrl>数据库连接url，charset,username,pass等信息,注意采用CDATA形式数据表示</dbUrl>  
+  <tableName>采集数据存放表名</tableName>
+  <tableField>数据表字段,只会将此列表中的字段写入数据库中,分隔符用英文逗号,注意groupname特指group中的groupName字段信息,name特指各个种子的种子名称 </tableField>
+  <group>分组信息，可以多个，依次放到后面即可</group>
+2,group目录下信息
+  <groupName>分组名称，会对应tableField中的groupname字段</groupName>
+  <enable>是否启用,必须配置为true时才有效，否则认为无效</enable>
+  <rss>rss格式的数据</rss>
+  <page>page格式的数据</page>
+3，rss配置形式
+  <enable>是否启用，为true时启用，否则认为无效</enable>
+  <name>种子名称，对应tableField中的name字段</name>
+  <url>feed的url地址</url>
+  <markValue>最新的结果标记为，是采用rss结果中的link字段的结果</markValue>
+  <finish>是否完成的标记，暂无用</finish>
+4，page配置形式
+  <enable>是否启用，仅当为true时有效</enable>
+  <name>任务名称，对应与tableField的name字段</name>
+  <url>url地址列表，多个时采用英文逗号分隔</url>
+  <charset>网页的字符集</charset>
+  <enableJs>是否开启js</enableJs>
+  <elementSelect>元素选择器，选择单个feed元素</elementSelect>
+  <elementInfo>元素信息
+    <title>title选择器(jsoup格式)，选择元素后元素内部的选择器</title>
+    <link>link选择器(jsoup格式)</link>
+    <description/>
+    <pubdate>同上</pubdate>
+	<author/>
+  </elementInfo>
+  <markValue/>最新标记标记为,同样是采用link字段的结果
+  <finish>完成标记位，暂无用</finish>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<taskName>test</taskName><dbDriver>com.mysql.jdbc.Driver</dbDriver>
+	<dbUrl><![CDATA[jdbc:mysql://localhost:3306/adver?useUnicode=true&characterEncoding=utf8&user=root&password=]]></dbUrl>
+	<tableName>adver_adsite</tableName><tableField>name,txt,url,mtype</tableField>
+	<seeds>
+		<seed>
+			<seedEnable>true</seedEnable><seedType>page</seedType><name>3158</name><enableJs>false</enableJs><firstUrl/><pageUrl>http://www.3158.cn/list/------------#PAGE#.html</pageUrl><pageRange>1,1</pageRange>
+			<charset>utf-8</charset><pageInfo/>
+			
+			<elementSelect>div.pro_list&gt;form&gt;div</elementSelect><elementInfo>
+	<txt>div.info&gt;p&gt;strong&gt;a,text</txt><turl>div.info>p>strong>a,attr,href</turl>
+	<mtype>div.info&gt;p:contains(行业)&gt;span&gt;a,text</mtype>
+	</elementInfo>
+			<baseUrl><!--加到上面link字段上--></baseUrl><otherInfo/><markField>link</markField>
+			<markValue/>
+
+
+			<finish>true</finish>
+			
+			</seed>
+			</seeds></root>
